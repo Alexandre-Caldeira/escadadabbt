@@ -1,0 +1,43 @@
+O que quero no site:
+
+> Header
+    - logo caelt (esquerda):
+        * click => home
+    - Navegação (direita):
+        * Home, Info, FAQs, Contato
+
+> Corpo
+    > HOME
+        - Foto grande (4p?) https://www.ombudsman.gov.au
+        com botoes:
+            * Dá uma ideia
+            * Ouvidoria
+            * Calendário
+            * FAQs
+            * Contato
+            * Gestão
+
+        - Barra de pesquisa => faq
+
+   	- Contato
+       	    * link para contatos (linktree,insta,email)
+	    * form ouvidoria?
+            * form dá uma ideia?
+
+    > INFO
+        - Calendário
+        - TBD: posts insta,  divulgações, 
+        projetos correntes, dê uma ideia
+
+    > FAQS 
+        - Droplist de perguntas
+
+> Footer  
+    - Logo DEL e UFV (esquerda)
+    - Feito com <3 - Alexandre Caldeira, 2021. (centro)
+    - Badges (direita)
+        * heroku, 
+        * git, 
+        * html 
+        * css
+        * node.js 

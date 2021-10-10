@@ -10,9 +10,9 @@ import {
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { ellipse, square, triangle } from 'ionicons/icons';
-import Tab1 from './pages/Tab1';
-import Tab2 from './pages/Tab2';
-import Tab3 from './pages/Tab3';
+import Escada from './pages/Escada';
+import Info from './pages/Info';
+import Faqs from './pages/Faqs';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -36,36 +36,44 @@ import './theme/variables.css';
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
+    
       <IonTabs>
         <IonRouterOutlet>
-          <Route exact path="/tab1">
-            <Tab1 />
+          <Route exact path="/escada">
+            <Escada />
           </Route>
-          <Route exact path="/tab2">
-            <Tab2 />
+          <Route exact path="/info">
+            <Info />
           </Route>
-          <Route path="/tab3">
-            <Tab3 />
+          <Route path="/faqs">
+            <Faqs />
           </Route>
           <Route exact path="/">
-            <Redirect to="/tab1" />
+            <Redirect to="/escada" />
           </Route>
         </IonRouterOutlet>
-        <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
+        
+        {/* style={{width:"20%",position:"absolute",right:"0px"}} */}    
+        <IonTabBar slot="top" style={{justifyContent:"right"}}>        
+          <IonTabButton tab="escada" href="/escada" layout="icon-end">
             <IonIcon icon={triangle} />
-            <IonLabel>Tab 1</IonLabel>
+            <IonLabel>ESCADA</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
+          <IonTabButton tab="info" href="/info" layout="icon-end">
             <IonIcon icon={ellipse} />
-            <IonLabel>Tab 2</IonLabel>
+            <IonLabel>INFO</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
+          <IonTabButton tab="faqs" href="/faqs" layout="icon-end">
             <IonIcon icon={square} />
-            <IonLabel>Tab 3</IonLabel>
+            <IonLabel>FAQS</IonLabel>
           </IonTabButton>
+          {/* </div> */}
         </IonTabBar>
+        
+
       </IonTabs>
+
+      
     </IonReactRouter>
   </IonApp>
 );
