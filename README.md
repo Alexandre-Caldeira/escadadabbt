@@ -1,9 +1,9 @@
-# Título
+# Escada da BBT
 
-Coloque a descrição do projeto aqui. Geralmente essa descrição tem de duas a três linhas de tamanho. Ela deve dar uma visão geral sobre o projeto, ex.: tecnologia usada, filosofia de existência, qual problema tenta resolver, etc.
+Site de Ouvidoria e divulgação para o Centro Acadêmico de Engenharia Elétrica da UFV. 
 
-> **IMPORTANTE:** coloque aqui alguma mensagem que é muito relevante aos usuários do projeto, se existir.
-
+> **IMPORTANTE:** Projeto em desenvolvimento
+> 
 ## Funcionalidades
 
 Aqui você pode colocar uma captura de tela do produto resultante desse projeto. Descreva também suas funcionalidades usando uma lista:
