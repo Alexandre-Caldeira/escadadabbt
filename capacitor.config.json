@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "escadadabbt",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}

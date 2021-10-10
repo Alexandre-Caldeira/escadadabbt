@@ -1,0 +1,7 @@
+{
+  "name": "escadadabbt",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
