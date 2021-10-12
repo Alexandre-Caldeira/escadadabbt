@@ -9,7 +9,6 @@ import {
   IonTabs,
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle } from 'ionicons/icons';
 import Escada from './pages/Escada';
 import Info from './pages/Info';
 import Faqs from './pages/Faqs';
@@ -33,6 +32,7 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
@@ -54,20 +54,16 @@ const App: React.FC = () => (
         </IonRouterOutlet>
         
         {/* style={{width:"20%",position:"absolute",right:"0px"}} */}    
-        <IonTabBar slot="top" style={{justifyContent:"right"}}>        
-          <IonTabButton tab="escada" href="/escada" layout="icon-end">
-            <IonIcon icon={triangle} />
-            <IonLabel>ESCADA</IonLabel>
+        <IonTabBar  color='#99b7ff' slot="bottom" style={{justifyContent:"right"}}>        
+          <IonTabButton tab="escada" href="/escada" layout="icon-end" >
+            <IonLabel class="text-labels">ESCADA</IonLabel>
           </IonTabButton>
           <IonTabButton tab="info" href="/info" layout="icon-end">
-            <IonIcon icon={ellipse} />
-            <IonLabel>INFO</IonLabel>
+            <IonLabel class="text-labels">INFO</IonLabel>
           </IonTabButton>
           <IonTabButton tab="faqs" href="/faqs" layout="icon-end">
-            <IonIcon icon={square} />
-            <IonLabel>FAQS</IonLabel>
+            <IonLabel class="text-labels">FAQS</IonLabel>
           </IonTabButton>
-          {/* </div> */}
         </IonTabBar>
         
 
@@ -75,6 +71,7 @@ const App: React.FC = () => (
 
       
     </IonReactRouter>
+
   </IonApp>
 );
 
