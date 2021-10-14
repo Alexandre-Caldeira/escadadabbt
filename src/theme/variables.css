@@ -196,7 +196,7 @@ http://ionicframework.com/docs/theming/ */
    * -------------------------------------------
    */
 
-  .md body {
+  .md body [blabla= 'true'] {
     --ion-background-color: #121212;
     --ion-background-color-rgb: 18,18,18;
 

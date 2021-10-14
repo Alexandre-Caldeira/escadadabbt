@@ -1,9 +1,12 @@
 .divDasperguntas {
     text-align: left;
     position: relative;
-    left: 2%;
-    right: 0;
-    top: 2%;
+    display:flex,;
+    margin-left:4%;
+    margin-right:4%;
+    margin-top:3%; 
+    justify-content:flex-start;
+    align-items:center;
     /* transform: translateY(10%); */
   }
   

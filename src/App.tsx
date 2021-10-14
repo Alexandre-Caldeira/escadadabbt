@@ -32,10 +32,6 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import EFooter from './components/EFooter';
-import { GiThorHammer } from "react-icons/gi";
-
-
 
 const App: React.FC = () => (
   <IonApp>
@@ -48,7 +44,8 @@ const App: React.FC = () => (
             <Escada />
           </Route>
           <Route exact path="/info">
-            <Info />
+            {/* //TODO: implementar INFO <Info /> */}
+            <Escada />
           </Route>
           <Route path="/faqs">
             <Faqs />

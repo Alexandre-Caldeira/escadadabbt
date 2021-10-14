@@ -1,15 +1,42 @@
-import { IonLabel, IonButton, IonChip} from '@ionic/react';
+import { IonLabel, IonButton, IonChip, IonToggle} from '@ionic/react';
 import './Header.css';
 
 import logo from '../assets/header_img.png'; 
 import { MdMenu, MdSearch } from "react-icons/md";
 
 const Header: React.FC = () => {
+  // function onClick(this: any, event: { detail: { checked: any; }; }){
+  //   // let systemDark = window.matchMedia("(prefers-color-scheme: dark)");
+  //   // systemDark.addListener(this.colorTest);
+  //   if(event.detail.checked){
+  //     document.body.setAttribute('data-theme', 'dark');
+  //   }
+  //   else{
+  //     document.body.setAttribute('data-theme', 'light');
+  //   }
+  // }
+
+  // Use matchMedia to check the user preference
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+  toggleDarkTheme(prefersDark.matches);
+
+  // Listen for changes to the prefers-color-scheme media query
+  prefersDark.addListener((mediaQuery) => toggleDarkTheme(mediaQuery.matches));
+
+  // Add or remove the "dark" class based on if the media query matches
+  function toggleDarkTheme(shouldAdd: boolean | undefined) {
+    document.body.classList.toggle('dark', shouldAdd);
+  }
+
   return (
 
     // Header from https://github.com/shadeed/headers-css, thanks!
     <header className="site-header">
-          <a href="/escada" >
+      <div style={{display:'flex', width:'96%', justifyContent:'space-between', alignItems:'center'}}>
+
+      
+          <a href="/escada" style={{justifyContent:'flex-start'}} >
               <img src={logo} alt ='logo' style={{margin:'.5em',width: '8rem',background:'transparent no-repeat center',backgroundSize:'cover'}}/>
           </a>    
 
@@ -31,6 +58,9 @@ const Header: React.FC = () => {
                 <IonLabel style={{color:'#000'}}>FAQS</IonLabel>
               </IonChip>
             </IonButton>
+
+              {/* onIonChange={event => onClick(event)} */}
+            {/* <IonToggle id="themeToggle" slot="end" ></IonToggle> */}
             
             {/* <IonButton fill='clear'>
               <h1 style={{fontSize:'2.5rem', color:'#000'}}>
@@ -41,6 +71,7 @@ const Header: React.FC = () => {
               <MdSearch/>
             </h1> */}
           </div>
+          
           
         
         
@@ -68,7 +99,7 @@ const Header: React.FC = () => {
         </IonTabButton>
         </IonTabBar> */}
 
-
+      </div>
     
     </header>
     
