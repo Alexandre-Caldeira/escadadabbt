@@ -10,7 +10,7 @@ const Faqs: React.FC = () => {
   return (
     <IonPage>
       <IonContent fullscreen>
-      <Header/>
+      {/* <Header/> */}
         <ExploreContainer name="PÁGINA COM AS FAQS" />
 
         <div className='divDasperguntas'>
@@ -21,7 +21,7 @@ const Faqs: React.FC = () => {
           <Pergunta/>
         </div>
 
-      <EFooter/>
+      {/* <EFooter/> */}
       </IonContent>
     </IonPage>
   );
