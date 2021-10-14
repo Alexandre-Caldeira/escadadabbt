@@ -65,12 +65,12 @@ const Escada: React.FC = () => {
             &nbsp; &nbsp; Ouvidoria Temporária </h2>
         </IonButton>
 
-{/* 
+
       <div style={{display:'flex',position:'absolute', top:'80%', left:'88%' }}>
           <img src={logoCAELT} alt ='logo' 
           style={{margin:'.5em',width: '5rem',maxHeight:'55%',
           background:'transparent no-repeat center',backgroundSize:'cover'}}/>
-      </div> */}
+      </div>
 
          {/* <h1>Some example text..
 Scroll back up again to "remove" the sticky position.
