@@ -1,6 +1,7 @@
 import { Redirect, Route } from 'react-router-dom';
 import {
   IonApp,
+  IonContent,
   IonIcon,
   IonLabel,
   IonRouterOutlet,
@@ -31,14 +32,18 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import EFooter from './components/EFooter';
+import { GiThorHammer } from "react-icons/gi";
+
 
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
     
-      <IonTabs>
+      {/* <IonTabs> */}
         <IonRouterOutlet>
+          
           <Route exact path="/escada">
             <Escada />
           </Route>
@@ -51,10 +56,11 @@ const App: React.FC = () => (
           <Route exact path="/">
             <Redirect to="/escada" />
           </Route>
+          
         </IonRouterOutlet>
         
         {/* style={{width:"20%",position:"absolute",right:"0px"}} */}    
-        <IonTabBar  color='#99b7ff' slot="bottom" style={{justifyContent:"right"}}>        
+        {/* <IonTabBar color='#99b7ff' slot="bottom" style={{justifyContent:"right",backgroundColor:'#99b7ff'}}>        
           <IonTabButton tab="escada" href="/escada" layout="icon-end" >
             <IonLabel class="text-labels">ESCADA</IonLabel>
           </IonTabButton>
@@ -65,14 +71,13 @@ const App: React.FC = () => (
             <IonLabel class="text-labels">FAQS</IonLabel>
           </IonTabButton>
         </IonTabBar>
-        
-
-      </IonTabs>
-
+      </IonTabs> */}
+      
       
     </IonReactRouter>
 
   </IonApp>
+
 );
 
 export default App;

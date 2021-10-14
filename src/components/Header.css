@@ -13,9 +13,14 @@
     font-size: 20px; } */
   
   .site-header {
+    display: flex;
+    position: -webkit-sticky;
     position: sticky;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
     top:0;
-    height: 5rem;
+    height: 4rem;
     background-color: #99b7ff; }
     /* #e3edfd */
 
