@@ -3,7 +3,7 @@
 Site de Ouvidoria e divulgação para o Centro Acadêmico de Engenharia Elétrica da UFV. 
 
 > **IMPORTANTE:** Projeto em desenvolvimento
-> 
+<!-- > 
 ## Funcionalidades
 
 Aqui você pode colocar uma captura de tela do produto resultante desse projeto. Descreva também suas funcionalidades usando uma lista:
@@ -56,3 +56,4 @@ Abaixo está uma lista de links interessantes e projetos similares:
 
 - [Projeto inspiração](https://github.com/projeto)
 - [Ferramenta semelhante](https://github.com/projeto)
+ -->
