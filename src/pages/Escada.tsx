@@ -17,7 +17,7 @@ const Escada: React.FC = () => {
         </IonHeader> */}
 
       <IonContent fullscreen>
-      {/* <Header/> */}
+      <Header/>
         <ExploreContainer name="HOME page" />
          <h1>Some example text..
 

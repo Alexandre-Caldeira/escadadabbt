@@ -10,7 +10,7 @@ const Info: React.FC = () => {
   return (
     <IonPage>
       <IonContent fullscreen>
-        {/* <Header/> */}
+        <Header/>
         <ExploreContainer name="PÁGINA DE INFORMAÇÕES GERAIS" />
         {/* <EFooter/> */}
       </IonContent>
